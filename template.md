@@ -144,20 +144,6 @@ pups_df =
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
 ``` r
-pups_df
+pups_df = 
+  janitor::clean_names(pups_df)
 ```
-
-    ## # A tibble: 313 × 6
-    ##    `Litter Number`   Sex `PD ears` `PD eyes` `PD pivot` `PD walk`
-    ##    <chr>           <dbl>     <dbl>     <dbl>      <dbl>     <dbl>
-    ##  1 #85                 1         4        13          7        11
-    ##  2 #85                 1         4        13          7        12
-    ##  3 #1/2/95/2           1         5        13          7         9
-    ##  4 #1/2/95/2           1         5        13          8        10
-    ##  5 #5/5/3/83/3-3       1         5        13          8        10
-    ##  6 #5/5/3/83/3-3       1         5        14          6         9
-    ##  7 #5/4/2/95/2         1        NA        14          5         9
-    ##  8 #4/2/95/3-3         1         4        13          6         8
-    ##  9 #4/2/95/3-3         1         4        13          7         9
-    ## 10 #2/2/95/3-2         1         4        NA          8        10
-    ## # ℹ 303 more rows

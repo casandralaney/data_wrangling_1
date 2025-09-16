@@ -55,6 +55,7 @@ pups_df =
            skip = 3,
            na = c("NA", ".", ""))
 
-pups_df
+pups_df = 
+  janitor::clean_names(pups_df)
 ```
 
