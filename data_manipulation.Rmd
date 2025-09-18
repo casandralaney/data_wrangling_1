@@ -1,0 +1,25 @@
+---
+title: "data_manipulation"
+author: "Casandra Laney"
+date: "2025-09-18"
+output: github_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+Let's import the datasets.
+
+```{r}
+litters_df = 
+  read_csv("data/FAS_litters.csv", na = c("NA", ".", ""))
+liters_df =
+  janitor::clean_names(litters_df)
+
+pups_df = 
+  read_csv("data/FAS_pups.csv", na = c("NA", ".", ""))
+pups_df =
+  janitor::clean_names(pups_df)
+```
+

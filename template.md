@@ -19,6 +19,7 @@ library(tidyverse)
 ``` r
 library(readxl)
 library(haven)
+library(dplyr)
 ```
 
 Let’s import a data set.
@@ -193,3 +194,5 @@ litters_df_base =
 ``` r
 write_csv(fotr_df, "data/fotr_df.csv")
 ```
+
+## dplyr starts as a data frame and ends as a data frame
